@@ -7,7 +7,7 @@ import cart_icon from "../assets/cart_icon.png";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar-logo">
+      <div className="nav-logo">
         <img src={logo} alt="Navbar logo" />
         <p>Shopio</p>
       </div>
