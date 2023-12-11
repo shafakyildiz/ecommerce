@@ -12,14 +12,27 @@ const Navbar = () => {
         <p>Shopio</p>
       </div>
       <ul className="nav-menu">
-        <li>Shop</li>
-        <li>Men</li>
-        <li>Women</li>
-        <li>Kids</li>
+        <li>
+          Shop
+          <hr />
+        </li>
+        <li>
+          Men
+          <hr />
+        </li>
+        <li>
+          Women
+          <hr />
+        </li>
+        <li>
+          Kids
+          <hr />
+        </li>
       </ul>
       <div className="nav-login-cart">
         <button>Login</button>
         <img src={cart_icon} alt="" />
+        <div className="nav-cart-count">0</div>
       </div>
     </div>
   );
