@@ -19,7 +19,7 @@ const Navbar = () => {
           }}
         >
           Shop
-          <hr />
+          {menu === "shop" && <hr />}
         </li>
         <li
           onClick={() => {
@@ -27,7 +27,7 @@ const Navbar = () => {
           }}
         >
           Men
-          <hr />
+          {menu === "men" && <hr />}
         </li>
         <li
           onClick={() => {
@@ -35,7 +35,7 @@ const Navbar = () => {
           }}
         >
           Women
-          <hr />
+          {menu === "women" && <hr />}
         </li>
         <li
           onClick={() => {
@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           Kids
-          <hr />
+          {menu === "kid" && <hr />}
         </li>
       </ul>
       <div className="nav-login-cart">
