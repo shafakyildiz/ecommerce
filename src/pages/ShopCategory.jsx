@@ -1,7 +1,9 @@
 import React from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const ShopCategory = () => {
-  return <div></div>;
+  const { new_collections } = useContext(ShopContext);
+  return <div className="shop-category">asdfsf</div>;
 };
 
 export default ShopCategory;
