@@ -4,6 +4,7 @@
   align-items: center;
   gap: 10px;
   height: 90vh;
+  margin-bottom: 100px;
 }
 
 .new-collections h1 {
@@ -21,5 +22,8 @@
 }
 
 .collections {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+  gap: 30px;
 }
