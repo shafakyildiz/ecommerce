@@ -22,9 +22,17 @@
   font-size: 18px;
   font-weight: 500;
   text-decoration: line-through;
+  margin-bottom: 10px;
 }
 
 .item-hover {
   transform: scale(1.05);
   transition: 0.6s;
+}
+
+.item img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
