@@ -10,7 +10,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <Link to="/">
+        <Link
+          to="/"
+          onClick={() => {
+            setMenu("shop");
+          }}
+        >
           <img src={logo} alt="Navbar logo" className="logo-img" />
           <p>Shopio</p>
         </Link>
@@ -23,7 +28,7 @@ const Navbar = () => {
         >
           <Link to="/">
             Shop
-            {menu === "shop" && <hr />}
+            {(menu === "shop" || menu === "") && <hr />}
           </Link>
         </li>
         <li
