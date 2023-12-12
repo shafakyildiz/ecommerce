@@ -11,7 +11,9 @@ const Navbar = () => {
     <div className="navbar">
       <div className="nav-logo">
         <img src={logo} alt="Navbar logo" />
-        <p>Shopio</p>
+        <Link to="/">
+          <p>Shopio</p>
+        </Link>
       </div>
       <ul className="nav-menu">
         <li
