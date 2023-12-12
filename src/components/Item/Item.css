@@ -1,5 +1,7 @@
 .item {
   width: 350px;
+  flex: 1 0 25%; /* explanation below */
+  margin: 5px;
 }
 
 .item p {
