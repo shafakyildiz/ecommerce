@@ -87,3 +87,7 @@ img {
   background: red;
   color: wheat;
 }
+
+a {
+  text-decoration: none;
+}
