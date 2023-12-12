@@ -10,8 +10,8 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="nav-logo">
-        <img src={logo} alt="Navbar logo" />
         <Link to="/">
+          <img src={logo} alt="Navbar logo" className="logo-img" />
           <p>Shopio</p>
         </Link>
       </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
         </Link>
 
         <Link to="/cart">
-          <img src={cart_icon} alt="" />
+          <img src={cart_icon} alt="" className="cart-img" />
         </Link>
 
         <div className="nav-cart-count">0</div>
