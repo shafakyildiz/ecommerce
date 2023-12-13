@@ -1,7 +1,7 @@
 import React from "react";
+import facebook_icon from "../assets/facebook_icon.png";
 import instagram_icon from "../assets/instagram_icon.png";
 import pinterest_icon from "../assets/pinterest_icon.png";
-import facebook_icon from "../assets/facebook_icon.png";
 import whatsapp_icon from "../assets/whatsapp_icon.png";
 
 const Footer = () => {

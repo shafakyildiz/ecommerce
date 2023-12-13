@@ -1,12 +1,12 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import "./index.css";
 import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ShopCategory from "./pages/ShopCategory";
-import Shop from "./pages/Shop";
-import Product from "./pages/Product";
-import LoginSignup from "./pages/LoginSignup";
+import "./index.css";
 import Cart from "./pages/Cart";
+import LoginSignup from "./pages/LoginSignup";
+import Product from "./pages/Product";
+import Shop from "./pages/Shop";
+import ShopCategory from "./pages/ShopCategory";
 
 function App() {
   return (
