@@ -66,7 +66,10 @@
   height: 400px;
 }
 
-.hand-icon,
 .arrow-icon {
-  width: 3em;
+  width: 2em;
+}
+
+.hand-icon {
+  width: 4em;
 }
