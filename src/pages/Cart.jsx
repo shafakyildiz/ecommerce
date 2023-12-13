@@ -23,30 +23,85 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div style={styles.cartContainer}>
       <h2>Your Cart</h2>
-      <ul>
+      <ul style={styles.cartItemsList}>
         {cartItems.map((item, index) => (
-          <li key={index}>
+          <li key={index} style={styles.cartItem}>
             {item.name} - ${item.price}
-            <button onClick={() => removeFromCart(index)}>Remove</button>
+            <button
+              style={styles.removeButton}
+              onClick={() => removeFromCart(index)}
+            >
+              Remove
+            </button>
           </li>
         ))}
       </ul>
-      <p>Total: ${total}</p>
-      <div>
+      <p style={styles.total}>Total: ${total}</p>
+      <div style={styles.availableProducts}>
         <h3>Available Products</h3>
-        {/* Example products */}
-        <button onClick={() => addToCart({ name: "Product 1", price: 10 })}>
+        <button
+          style={styles.addButton}
+          onClick={() => addToCart({ name: "Product 1", price: 10 })}
+        >
           Add Product 1
         </button>
-        <button onClick={() => addToCart({ name: "Product 2", price: 20 })}>
+        <button
+          style={styles.addButton}
+          onClick={() => addToCart({ name: "Product 2", price: 20 })}
+        >
           Add Product 2
         </button>
         {/* Add more products as needed */}
       </div>
     </div>
   );
+};
+
+const styles = {
+  cartContainer: {
+    width: "300px",
+    border: "1px solid #ddd",
+    padding: "20px",
+    borderRadius: "8px",
+    margin: "20px",
+  },
+  cartItemsList: {
+    listStyle: "none",
+    padding: "0",
+  },
+  cartItem: {
+    borderBottom: "1px solid #ddd",
+    padding: "10px 0",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  removeButton: {
+    background: "#dc3545",
+    color: "#fff",
+    border: "none",
+    padding: "5px 10px",
+    cursor: "pointer",
+    borderRadius: "4px",
+  },
+  total: {
+    fontWeight: "bold",
+    marginTop: "10px",
+  },
+  availableProducts: {
+    marginTop: "20px",
+  },
+  addButton: {
+    background: "#28a745",
+    color: "#fff",
+    border: "none",
+    padding: "8px 12px",
+    cursor: "pointer",
+    borderRadius: "4px",
+    marginRight: "10px",
+  },
 };
 
 export default Cart;
