@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import NewCollections from "../components/newcollections/NewCollections";
 import Newsletter from "../components/newsletter/Newsletter";
@@ -13,6 +14,7 @@ const Shop = () => {
       <Offers />
       <NewCollections />
       <Newsletter />
+      <Footer />
     </div>
   );
 };

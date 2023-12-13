@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-top: 10em;
+  background-color: aliceblue;
+  padding-top: 5em;
 }
 
 .footer-logo {
@@ -30,16 +33,23 @@
   cursor: pointer;
 }
 
-.footer-social-icon {
+.footer-social-icons {
   display: flex;
   gap: 20px;
 }
 
 .footer-icons-container {
+  justify-content: center;
   padding: 10px;
   padding-bottom: 6px;
   background: #fbfbfb;
   border: 1px solid #ebebeb;
+}
+
+.instagram_icon,
+.facebook_icon,
+.whatsapp_icon {
+  width: 3em;
 }
 
 .footer-copyright {

@@ -1,14 +1,13 @@
 import React from "react";
-import facebook_icon from "../assets/facebook_icon.png";
-import instagram_icon from "../assets/instagram_icon.png";
-import pinterest_icon from "../assets/pinterest_icon.png";
-import whatsapp_icon from "../assets/whatsapp_icon.png";
+import facebook_icon from "../assets/facebook.png";
+import instagram_icon from "../assets/instagram.png";
+import whatsapp_icon from "../assets/whatsapp.png";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-logo">
-        <img src={footer_logo} alt="" className="footer-logo" />
         <p>SHOPIO</p>
       </div>
       <ul className="footer-links">
@@ -20,16 +19,25 @@ const Footer = () => {
       </ul>
       <div className="footer-social-icons">
         <div className="footer-icons-container">
-          <img src={instagram_icon} alt="" />
+          <img
+            src={instagram_icon}
+            alt="instagram_icon"
+            className="instagram_icon"
+          />
         </div>
         <div className="footer-icons-container">
-          <img src={pinterest_icon} alt="" />
+          <img
+            src={facebook_icon}
+            alt="facebook_icon"
+            className="facebook_icon"
+          />
         </div>
         <div className="footer-icons-container">
-          <img src={facebook_icon} alt="" />
-        </div>
-        <div className="footer-icons-container">
-          <img src={whatsapp_icon} alt="" />
+          <img
+            src={whatsapp_icon}
+            alt="whatsapp_icon"
+            className="whatsapp_icon"
+          />
         </div>
       </div>
       <div className="footer-copyright">
