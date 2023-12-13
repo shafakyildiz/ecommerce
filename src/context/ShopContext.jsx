@@ -7,9 +7,9 @@ const ShopContextProvider = (props) => {
   // TODO: Change new collections with different json data like all products...
   const contextValue = { new_collections };
   return (
-    <ShopContextProvider value={contextValue}>
+    <ShopContext.Provider value={contextValue}>
       {props.children}
-    </ShopContextProvider>
+    </ShopContext.Provider>
   );
 };
 
