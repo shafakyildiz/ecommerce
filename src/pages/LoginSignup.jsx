@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-import "./styles/LoginSignup.css";
-import React, { useState } from "react";
 import { createBrowserHistory } from "history";
+import React, { useState } from "react";
+import "./styles/LoginSignup.css";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");

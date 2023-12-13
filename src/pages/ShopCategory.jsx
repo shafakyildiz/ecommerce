@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ShopContext } from "../context/ShopContext";
+import React, { useContext } from "react";
 import { useLocation } from "react-router-dom";
+import kid_banner from "../components/assets/kid_banner.jpg";
 import men_banner from "../components/assets/men_banner.jpg";
 import women_banner from "../components/assets/women_banner.jpg";
-import kid_banner from "../components/assets/kid_banner.jpg";
+import { ShopContext } from "../context/ShopContext";
 import "./styles/ShopCategory.css";
 
 const ShopCategory = () => {
