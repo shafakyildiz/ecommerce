@@ -74,6 +74,7 @@
   font-size: 20px;
   background: white;
   cursor: pointer;
+  color: #235b97;
 }
 
 .nav-login-cart button:hover {

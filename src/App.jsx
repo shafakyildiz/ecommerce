@@ -21,7 +21,7 @@ function App() {
             element={<ShopCategory category="women" />}
           ></Route>
           <Route path="/kid" element={<ShopCategory category="kid" />}></Route>
-          <Route path="/product" element={<Product category="kid" />}>
+          <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />}></Route>
           </Route>
           <Route path="/cart" element={<Cart />}></Route>
