@@ -44,6 +44,9 @@
   padding-bottom: 6px;
   background: #fbfbfb;
   border: 1px solid #ebebeb;
+  background-color: aliceblue;
+  border: none;
+  cursor: pointer;
 }
 
 .instagram_icon,
