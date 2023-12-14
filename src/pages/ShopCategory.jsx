@@ -27,7 +27,9 @@ const ShopCategory = () => {
     <>
       {path === MEN_PATH && (
         <div className="container">
-          <img src={men_banner} alt="" />
+          <div className="image-container">
+            <img src={men_banner} alt="" />
+          </div>
           <h1>POPULAR IN {MEN_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
@@ -52,7 +54,9 @@ const ShopCategory = () => {
       )}
       {path === WOMEN_PATH && (
         <div className="container">
-          <img src={women_banner} alt="" />
+          <div className="image-container">
+            <img src={women_banner} alt="" />
+          </div>
           <h1>POPULAR IN {WOMEN_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
@@ -77,7 +81,9 @@ const ShopCategory = () => {
       )}
       {path === KID_PATH && (
         <div className="container">
-          <img src={kid_banner} alt="" />
+          <div className="image-container">
+            <img src={kid_banner} alt="" />
+          </div>
           <h1>POPULAR IN {KID_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
