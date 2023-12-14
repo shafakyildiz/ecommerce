@@ -10,6 +10,7 @@
   box-shadow: 5px 10px #777676;
   padding-top: 0;
   color: rgb(70, 66, 66);
+  margin-bottom: 3em;
 }
 
 .item > * {

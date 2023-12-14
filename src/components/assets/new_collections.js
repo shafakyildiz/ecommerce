@@ -6,6 +6,7 @@ export let new_collections = [
     new_price: 999.99,
     image:
       "https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: "men",
   },
   {
     id: "102",
@@ -14,6 +15,7 @@ export let new_collections = [
     new_price: 699.99,
     image:
       "https://images.pexels.com/photos/5234774/pexels-photo-5234774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: "men",
   },
   {
     id: "103",
@@ -22,6 +24,7 @@ export let new_collections = [
     new_price: 129.99,
     image:
       "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "men",
   },
   {
     id: "104",
@@ -30,6 +33,7 @@ export let new_collections = [
     new_price: 49.99,
     image:
       "https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "men",
   },
   {
     id: "105",
@@ -38,6 +42,7 @@ export let new_collections = [
     new_price: 69.99,
     image:
       "https://images.pexels.com/photos/7432/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "women",
   },
   {
     id: "106",
@@ -46,6 +51,7 @@ export let new_collections = [
     new_price: 399.99,
     image:
       "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    category: "women",
   },
   {
     id: "107",
@@ -54,6 +60,7 @@ export let new_collections = [
     new_price: 79.99,
     image:
       "https://images.pexels.com/photos/2651794/pexels-photo-2651794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "women",
   },
   {
     id: "108",
@@ -62,6 +69,7 @@ export let new_collections = [
     new_price: 39.99,
     image:
       "https://images.pexels.com/photos/842947/pexels-photo-842947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "kid",
   },
   {
     id: "109",
@@ -70,6 +78,7 @@ export let new_collections = [
     new_price: 59.99,
     image:
       "https://images.pexels.com/photos/437038/pexels-photo-437038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "kid",
   },
   {
     id: "110",
@@ -78,5 +87,6 @@ export let new_collections = [
     new_price: 179.99,
     image:
       "https://images.pexels.com/photos/267394/pexels-photo-267394.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    category: "kid",
   },
 ];
