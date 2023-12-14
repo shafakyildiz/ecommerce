@@ -1,7 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./Navbar.css";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ShopContext } from "../../context/ShopContext";
 import cart_icon from "../assets/cart_icon.png";
 import logo from "../assets/logo.png";
@@ -9,6 +9,12 @@ import logo from "../assets/logo.png";
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const { cartCount } = useContext(ShopContext);
+  const location = useLocation();
+  let path = location.pathname;
+
+  useEffect(() => {
+    setMenu(path.substring(1, path.length));
+  }, [path]);
   return (
     <div className="navbar">
       <div className="nav-logo">
