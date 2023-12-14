@@ -5,6 +5,7 @@ import NewCollections from "../components/newcollections/NewCollections";
 import Newsletter from "../components/newsletter/Newsletter";
 import Offers from "../components/offers/Offers";
 import Popular from "../components/popular/Popular";
+import "./styles/Shop.css";
 
 const Shop = () => {
   return (

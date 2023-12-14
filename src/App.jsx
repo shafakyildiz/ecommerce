@@ -12,21 +12,29 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Shop />}></Route>
-          <Route path="/men" element={<ShopCategory category="men" />}></Route>
-          <Route
-            path="/women"
-            element={<ShopCategory category="women" />}
-          ></Route>
-          <Route path="/kid" element={<ShopCategory category="kid" />}></Route>
-          <Route path="/product" element={<Product />}>
-            <Route path=":productId" element={<Product />}></Route>
-          </Route>
-          <Route path="/cart" element={<Cart />}></Route>
-          <Route path="/login" element={<LoginSignup />}></Route>
-        </Routes>
+        <div className="main-container">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />}></Route>
+            <Route
+              path="/men"
+              element={<ShopCategory category="men" />}
+            ></Route>
+            <Route
+              path="/women"
+              element={<ShopCategory category="women" />}
+            ></Route>
+            <Route
+              path="/kid"
+              element={<ShopCategory category="kid" />}
+            ></Route>
+            <Route path="/product" element={<Product />}>
+              <Route path=":productId" element={<Product />}></Route>
+            </Route>
+            <Route path="/cart" element={<Cart />}></Route>
+            <Route path="/login" element={<LoginSignup />}></Route>
+          </Routes>
+        </div>
       </BrowserRouter>
     </>
   );

@@ -1,4 +1,12 @@
 .shop-container {
-  display: block;
+  display: inline-flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.sample-div {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
 }
