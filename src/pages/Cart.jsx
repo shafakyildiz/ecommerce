@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { ShopContext } from "../context/ShopContext";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
 
+  const { cartCount, setCartCount, increment, decrement } =
+    useContext(ShopContext);
+
   const addToCart = (item) => {
     const updatedCart = [...cartItems, item];
     setCartItems(updatedCart);
     updateTotal(updatedCart);
+    increment();
   };
 
   const removeFromCart = (index) => {
@@ -15,6 +20,7 @@ const Cart = () => {
     updatedCart.splice(index, 1);
     setCartItems(updatedCart);
     updateTotal(updatedCart);
+    decrement();
   };
 
   const updateTotal = (cart) => {
@@ -43,7 +49,10 @@ const Cart = () => {
         <h3>Available Products</h3>
         <button
           style={styles.addButton}
-          onClick={() => addToCart({ name: "Product 1", price: 10 })}
+          onClick={() => {
+            addToCart({ name: "Product 1", price: 10 });
+            increment;
+          }}
         >
           Add Product 1
         </button>
