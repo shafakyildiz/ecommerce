@@ -32,7 +32,7 @@ const Product = ({ match }) => {
     <div>
       {product ? (
         <div className="container">
-          <div className="image-container">
+          <div className="product-image-container">
             <img src={product.image} alt="" />
           </div>
           <h2>{product.name}</h2>
