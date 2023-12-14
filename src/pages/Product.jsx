@@ -31,12 +31,16 @@ const Product = ({ match }) => {
   return (
     <div>
       {product ? (
-        <div className="container">
+        <div className="product-container">
           <div className="product-image-container">
             <img src={product.image} alt="" />
           </div>
           <h2>{product.name}</h2>
-          <p>Price: ${product.new_price}</p>
+          <div>
+            <p className="item-price-old">${product.old_price}</p>
+            Price: ${product.new_price}{" "}
+          </div>
+
           <p>Category: {product.category.toUpperCase()}</p>
         </div>
       ) : (
