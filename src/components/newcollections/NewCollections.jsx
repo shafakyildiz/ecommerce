@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "../item/Item";
-import { new_collections } from "../assets/product_data.js";
+import { product_data } from "../assets/product_data.js";
 import "./NewCollections.css";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const NewCollections = () => {
       <h1>NEW COLLECTIONS</h1>
       <hr />
       <div className="new-collections-item">
-        {new_collections.map((item, index) => {
+        {product_data.map((item, index) => {
           return (
             <Link key={index} to={`/product/${item.id}`}>
               <Item

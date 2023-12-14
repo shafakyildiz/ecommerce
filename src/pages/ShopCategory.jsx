@@ -19,8 +19,8 @@ const ShopCategory = () => {
   const WOMEN_CATEGORY = "women";
   const KID_CATEGORY = "kid";
 
-  const { new_collections } = useContext(ShopContext);
-  console.log(new_collections);
+  const { product_data } = useContext(ShopContext);
+  console.log(product_data);
 
   return (
     <>
@@ -32,7 +32,7 @@ const ShopCategory = () => {
           <h1>POPULAR IN {MEN_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
-            {new_collections
+            {product_data
               .filter((x) => x.category === MEN_CATEGORY)
               .map((item, index) => {
                 return (
@@ -59,7 +59,7 @@ const ShopCategory = () => {
           <h1>POPULAR IN {WOMEN_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
-            {new_collections
+            {product_data
               .filter((x) => x.category === WOMEN_CATEGORY)
               .map((item, index) => {
                 return (
@@ -86,7 +86,7 @@ const ShopCategory = () => {
           <h1>POPULAR IN {KID_CATEGORY.toLocaleUpperCase()} CATEGORY</h1>
           <hr />
           <div className="container-item">
-            {new_collections
+            {product_data
               .filter((x) => x.category === KID_CATEGORY)
               .map((item, index) => {
                 return (

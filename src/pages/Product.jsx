@@ -21,10 +21,10 @@ const Product = ({ match }) => {
     // Add more products as needed
   ];
 
-  const { new_collections } = useContext(ShopContext);
+  const { product_data } = useContext(ShopContext);
 
   // Find the product based on the ID from the route parameter
-  const product = new_collections.find((p) => p.id === productId);
+  const product = product_data.find((p) => p.id === productId);
   console.log(product);
 
   // Render the product details

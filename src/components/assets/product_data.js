@@ -1,4 +1,4 @@
-export let new_collections = [
+export let product_data = [
   {
     id: "101",
     name: "Laptop",

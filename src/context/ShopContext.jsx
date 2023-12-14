@@ -1,11 +1,11 @@
 import React, { createContext, useState } from "react";
-import { new_collections } from "../components/assets/product_data";
+import { product_data } from "../components/assets/product_data";
 
 export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
   const [cartCount, setCartCount] = useState(0);
-  const contextValue = { new_collections };
+  const contextValue = { product_data };
 
   //Increase counter
   const increment = () => {

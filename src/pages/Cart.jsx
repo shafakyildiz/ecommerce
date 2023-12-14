@@ -6,7 +6,7 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
 
-  const { new_collections, increment, decrement } = useContext(ShopContext);
+  const { product_data, increment, decrement } = useContext(ShopContext);
 
   const addToCart = (item) => {
     const updatedCart = [...cartItems, item];
@@ -44,11 +44,11 @@ const Cart = () => {
           </li>
         ))}
       </ul>
-      <p style={styles.total}>Total: ${total}</p>
+      <p style={styles.total}>Total: ${total.toFixed(2)}</p>
       <div style={styles.availableProducts}>
         <h3>Available Products</h3>
 
-        {new_collections.map((element) => {
+        {product_data.map((element) => {
           return (
             <button
               style={styles.addButton}
@@ -80,6 +80,9 @@ const styles = {
   cartItemsList: {
     listStyle: "none",
     padding: "0",
+    display: "flex",
+    flexDirection: "column",
+    flexWrap: "nowrap",
   },
   cartItem: {
     borderBottom: "1px solid #ddd",
@@ -95,6 +98,8 @@ const styles = {
     padding: "5px 10px",
     cursor: "pointer",
     borderRadius: "4px",
+    width: "10em",
+    marginLeft: "2em",
   },
   total: {
     fontWeight: "bold",
