@@ -11,7 +11,6 @@ const ShopCategory = () => {
   const location = useLocation();
   let path = location.pathname;
 
-  console.log(path);
   const MEN_PATH = "/men";
   const WOMEN_PATH = "/women";
   const KID_PATH = "/kid";
