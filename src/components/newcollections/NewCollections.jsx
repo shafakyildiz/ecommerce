@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "../item/Item";
-import { new_collections } from "../assets/new_collections.js";
+import { new_collections } from "../assets/product_data.js";
 import "./NewCollections.css";
 import { Link } from "react-router-dom";
 

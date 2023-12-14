@@ -1,11 +1,9 @@
 import React from "react";
-import { product_data } from "../assets/product_data.js";
 import "./Popular.css";
 import Item from "../item/Item";
 import { Link } from "react-router-dom";
 
 const Popular = () => {
-  console.log(product_data);
   return (
     <div className="popular">
       <h1>POPULAR IN GENERAL CATEGORY</h1>

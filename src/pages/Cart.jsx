@@ -6,8 +6,7 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   const [total, setTotal] = useState(0);
 
-  const { cartCount, setCartCount, increment, decrement } =
-    useContext(ShopContext);
+  const { new_collections, increment, decrement } = useContext(ShopContext);
 
   const addToCart = (item) => {
     const updatedCart = [...cartItems, item];
@@ -48,22 +47,20 @@ const Cart = () => {
       <p style={styles.total}>Total: ${total}</p>
       <div style={styles.availableProducts}>
         <h3>Available Products</h3>
-        <button
-          style={styles.addButton}
-          onClick={() => {
-            addToCart({ name: "Product 1", price: 10 });
-            increment;
-          }}
-        >
-          Add Product 1
-        </button>
-        <button
-          style={styles.addButton}
-          onClick={() => addToCart({ name: "Product 2", price: 20 })}
-        >
-          Add Product 2
-        </button>
-        {/* Add more products as needed */}
+
+        {new_collections.map((element) => {
+          return (
+            <button
+              style={styles.addButton}
+              onClick={() => {
+                addToCart({ name: element.name, price: element.new_price });
+                increment;
+              }}
+            >
+              Add {element.name} - ${element.new_price}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
