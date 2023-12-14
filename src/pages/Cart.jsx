@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
+import "./styles/Cart.css";
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -70,11 +71,14 @@ const Cart = () => {
 
 const styles = {
   cartContainer: {
-    width: "300px",
-    border: "1px solid #ddd",
-    padding: "20px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    border: "3px solid #ddd",
+    padding: "6em",
     borderRadius: "8px",
-    margin: "20px",
+    margin: "5% auto",
   },
   cartItemsList: {
     listStyle: "none",
@@ -110,6 +114,7 @@ const styles = {
     cursor: "pointer",
     borderRadius: "4px",
     marginRight: "10px",
+    marginBottom: "0.5em",
   },
 };
 
