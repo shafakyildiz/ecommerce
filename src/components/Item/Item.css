@@ -13,10 +13,6 @@
   margin-bottom: 3em;
 }
 
-.item > * {
-  width: calc(100% / 3);
-}
-
 .item p {
   margin: 6px 0px;
   display: flex;
