@@ -29,40 +29,52 @@ const Cart = () => {
   };
 
   return (
-    <div style={styles.cartContainer}>
-      <h2>Your Cart</h2>
-      <ul style={styles.cartItemsList}>
-        {cartItems.map((item, index) => (
-          <li key={index} style={styles.cartItem}>
-            {item.name} - ${item.price}
-            <button
-              style={styles.removeButton}
-              onClick={() => removeFromCart(index)}
-            >
-              Remove
-            </button>
-          </li>
-        ))}
-      </ul>
-      <p style={styles.total}>Total: ${total.toFixed(2)}</p>
+    <>
+      <div style={styles.cartContainer}>
+        <h2>Your Cart</h2>
+        <ul style={styles.cartItemsList}>
+          {cartItems.map((item, index) => (
+            <li key={index} style={styles.cartItem}>
+              {item.name} - ${item.price}
+              <button
+                style={styles.removeButton}
+                onClick={() => removeFromCart(index)}
+              >
+                Remove
+              </button>
+            </li>
+          ))}
+        </ul>
+        <p style={styles.total}>Total: ${total.toFixed(2)}</p>
+      </div>
+
       <div style={styles.availableProducts}>
         <h3>Available Products</h3>
 
-        {product_data.map((element) => {
-          return (
-            <button
-              style={styles.addButton}
-              onClick={() => {
-                addToCart({ name: element.name, price: element.new_price });
-                increment;
-              }}
-            >
-              Add {element.name} - ${element.new_price}
-            </button>
-          );
-        })}
+        <div className="cart-product-container">
+          {product_data.map((element) => {
+            return (
+              <div className="cart-item" key={element.id}>
+                <img
+                  src={element.image}
+                  alt="Product image"
+                  className="cart-image"
+                />
+                <button
+                  style={styles.addButton}
+                  onClick={() => {
+                    addToCart({ name: element.name, price: element.new_price });
+                    increment;
+                  }}
+                >
+                  Add {element.name} - ${element.new_price}
+                </button>
+              </div>
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -107,6 +119,11 @@ const styles = {
   },
   availableProducts: {
     marginTop: "20px",
+    textAlign: "center",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "10px",
   },
   addButton: {
     background: "#28a745",
@@ -117,6 +134,11 @@ const styles = {
     borderRadius: "4px",
     marginRight: "10px",
     marginBottom: "0.5em",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    textAlign: "center",
+    width: "25em",
   },
 };
 
