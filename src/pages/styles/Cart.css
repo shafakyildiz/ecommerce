@@ -13,6 +13,10 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 1em;
+  border: 3px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
 }
 
 .cart-image {
@@ -22,4 +26,5 @@
   object-fit: cover;
   width: 25em;
   height: 25em;
+  border-radius: 1em;
 }

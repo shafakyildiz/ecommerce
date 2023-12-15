@@ -49,7 +49,7 @@ const Cart = () => {
       </div>
 
       <div style={styles.availableProducts}>
-        <h3>Available Products</h3>
+        <h1>Available Products</h1>
 
         <div className="cart-product-container">
           {product_data.map((element) => {
@@ -131,7 +131,7 @@ const styles = {
     border: "none",
     padding: "8px 12px",
     cursor: "pointer",
-    borderRadius: "4px",
+    borderRadius: "1em",
     marginBottom: "0.5em",
     display: "flex",
     flexDirection: "column",
