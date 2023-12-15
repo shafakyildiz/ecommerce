@@ -132,7 +132,6 @@ const styles = {
     padding: "8px 12px",
     cursor: "pointer",
     borderRadius: "4px",
-    marginRight: "10px",
     marginBottom: "0.5em",
     display: "flex",
     flexDirection: "column",
