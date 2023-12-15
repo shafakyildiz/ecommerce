@@ -15,7 +15,7 @@ export let product_data = [
     new_price: 699.99,
     image:
       "https://images.pexels.com/photos/5234774/pexels-photo-5234774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    category: "men",
+    category: "women",
   },
   {
     id: "103",

@@ -1,12 +1,9 @@
-import { createBrowserHistory } from "history";
 import React, { useState } from "react";
 import "./styles/LoginSignup.css";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  const history = createBrowserHistory();
 
   const handleLogin = (e) => {
     e.preventDefault();
